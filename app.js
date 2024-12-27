@@ -21,7 +21,4 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: "Internal Server Error" });
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`API Gateway running on port ${PORT}`);
-});
+module.exports = app;
